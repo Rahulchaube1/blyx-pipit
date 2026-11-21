@@ -1,0 +1,15 @@
+use pipit;
+
+fn main() {
+    let codes = [0, 3, 0];
+    let total = 8.0;
+    let batch = 2.0;
+    let tolerance = 1.0;
+    let result = pipit_continue_batch(codes, total, batch, tolerance);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
