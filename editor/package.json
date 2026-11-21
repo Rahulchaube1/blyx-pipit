@@ -1,0 +1,57 @@
+{
+  "name": "blyx-pipit",
+  "displayName": "Blyx Pipit",
+  "description": "Plan the next CLI batch from child exit codes and a failure allowance.",
+  "version": "0.1.0",
+  "publisher": "RahulChaube",
+  "license": "(MIT OR Apache-2.0)",
+  "icon": "logo.png",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "blyx",
+    "pipit",
+    "framework"
+  ],
+  "homepage": "https://www.blyx-lang.space/packages/pipit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rahulchaube1/blyx-pipit.git",
+    "directory": "editor"
+  },
+  "bugs": {
+    "url": "https://github.com/Rahulchaube1/blyx-pipit/issues"
+  },
+  "extensionDependencies": [
+    "RahulChaube.blyx-language"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "blyx",
+        "path": "./snippets/framework.json"
+      }
+    ],
+    "walkthroughs": [
+      {
+        "id": "pipit.start",
+        "title": "Get started with Pipit",
+        "description": "Plan the next CLI batch from child exit codes and a failure allowance.",
+        "steps": [
+          {
+            "id": "run",
+            "title": "Run the Pipit example",
+            "description": "Create an empty .blyx file, insert blyx-pipit-demo and choose **Blyx: Run File**.\n[Open the documentation](https://www.blyx-lang.space/packages/pipit)",
+            "media": {
+              "markdown": "walkthrough.md"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
